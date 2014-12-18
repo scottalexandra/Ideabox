@@ -1,0 +1,51 @@
+<body>
+  <h1>IdeaBox</h1>
+  <form action='/' method='POST'>
+    <p>
+      Add An Idea:
+    </p>
+    <div id="input-boxes">
+      <input type='text' placeholder='Title' name='idea[title]'/><br/>
+      <textarea placeholder='Description' name='idea[description]'></textarea><br/>
+      <input type='text' placeholder='Add a tag for your idea' name='idea[tag]'/><br/>
+    <!-- <form action="/<%idea.tag %>/add tag" method="POST">
+      <input type="submit" value="Add Tag"/>
+    </form> -->
+    <input type="submit"/>
+  </div>
+  <hr>
+  <h3>Existing Ideas</h3>
+
+  <div id="idea-list">
+    <ul>
+      <% ideas.each do |idea| %>
+        <li>
+          <div id="idea-title">
+            <%= idea.title %><br/>
+          </div>
+          <div id="idea-tag">
+            <%= idea.tag %><br/>
+          </div>
+          <div id="idea-description">
+            <%= idea.description %>
+          </div>
+          <div id=like-button>
+            <form action="/<%= idea.id %>/like" method="POST" style="display: inline">
+              <input type="submit" value=":)"/>
+            </form>
+          </div>
+          <div id="delete-button">
+            <form action="/<%= idea.id %>" method="POST" style="display: inline">
+              <input type="hidden" name="_method" value="DELETE">
+              <input type="submit" value="delete"/>
+            </form>
+          </div>
+          <div id="edit-link">
+            <a href="/<%= idea.id %>/edit">Edit</a>
+          </div>
+
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</body>

@@ -1,0 +1,132 @@
+body{
+  background-image: url("http://cdn.homedecor.pics/images/groveland.spps.org/uploads/hanging_light_bulbs.jpg");
+  background-repeat: repeat-y;
+  font-family: "lucida console", monaco, monospace;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1{
+  color: black;
+  background-color: hsla(0,100%,100%,0.5);
+  text-align: center;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: black;
+
+}
+
+h3{
+  color: white;
+  font-size: 2em;
+  /*background-color: hsla(0,100%,100%,0.5);*/
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+#input-boxes{
+  text-align: center;
+}
+
+
+#input-boxes input{
+  height: 40px;
+  width: 500px;
+  background-color: hsla(0,100%,100%,0.7);
+}
+
+#input-boxes textarea{
+  height: 60px;
+  width: 500px;
+  background-color: hsla(0,100%,100%,0.7);
+}
+
+/*#idea-title:before{
+  content: "Title:"
+}*/
+
+#idea-title{
+  display :block;
+  padding: 5px;
+  background-color: hsla(0,100%,100%,0.7);
+  text-decoration: underline;
+}
+
+#idea-description:before{
+  content: "Description:";
+  display: block;
+}
+#idea-description{
+  display :block;
+  padding: 10px;
+  background-color: hsla(0,100%,100%,0.7)
+}
+
+#idea-tag:before{
+  content: "Tag =>";
+  display: inline;
+}
+
+#idea-tag{
+  display :block;
+  padding: 1px;
+  background-color: hsla(0,100%,100%,0.7)
+
+}
+
+#like-button{
+  display :inline;
+  padding: 10px;
+  /*background-color: hsla(0,100%,100%,0.5);*/
+}
+
+#edit-link a:hover{
+  color: white;
+
+}
+
+#edit-link{
+  display :inline;
+  /*padding: 10px;*/
+  /*background-color: hsla(0,100%,100%,0.5);*/
+}
+
+#edit-link a{
+  text-decoration: underline;
+}
+
+#delete-button{
+  display :inline;
+  /*padding-right: 10px;*/
+  /*background-color: hsla(0,100%,100%,0.5);*/
+}
+
+#idea-list li{
+  padding: 10px;
+  background-color: hsla(0,100%,100%,0.5);
+}
+
+#edit-boxes{
+  text-align: center;
+}
+
+#edit-boxes input{
+  height: 40px;
+  width: 500px;
+  background-color: hsla(0,100%,100%,0.7);
+}
+
+#edit-boxes textarea{
+  height: 40px;
+  width: 500px;
+  background-color: hsla(0,100%,100%,0.7);
+}
+
+footer{
+  color: white;
+  text-align: center;
+}

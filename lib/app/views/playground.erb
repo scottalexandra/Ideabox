@@ -1,0 +1,13 @@
+<h2>Hello World</h2>
+<p>You look <%= @adjective %> today.</p>
+
+
+<%= partial :_partial%>
+
+<hr>
+<% @thing.each do |thing| %>
+  <p>
+    <strong><%= thing[:weather] %></strong> <%= thing[:forecast] %>
+  </p>
+<% end %>
+<hr>
